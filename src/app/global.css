@@ -1,17 +1,13 @@
 @import "tailwindcss";
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: #f3f4f6; /* light gray background in light mode */
+  color: #ffffff; /* White text color */
+  background-color: #374151; /* Dark gray background */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-}
-
-body.dark {
-  background-color: #1f2937; /* dark gray background in dark mode */
 }
 
 @keyframes fadeIn {

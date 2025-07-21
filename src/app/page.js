@@ -35,6 +35,8 @@ export default function Home() {
     if (profile) {
       // Set background image from profile data
       document.body.style.backgroundImage = `url(${profile.background})`;
+      // Set a consistent background color
+      document.body.style.backgroundColor = '#f3f4f6'; // Light gray
     }
     
     return () => {
@@ -44,7 +46,7 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-amber-500"></div>
       </div>
     );
@@ -54,8 +56,8 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center max-w-md mx-auto">
       {profile && (
         <>
-          {/* Profile header section */}
-          <div className="w-full bg-gray-200/80 dark:bg-gray-900/80 backdrop-blur-lg text-gray-800 dark:text-white rounded-xl shadow-xl mb-6 p-6 transform transition-all duration-500 hover:shadow-2xl">
+          {/* Profile header section - using consistent gray background */}
+          <div className="w-full bg-gray-800/90 backdrop-blur-lg text-white rounded-xl shadow-xl mb-6 p-6 transform transition-all duration-500 hover:shadow-2xl">
             <ProfileHeader profile={profile} />
           </div>
 
