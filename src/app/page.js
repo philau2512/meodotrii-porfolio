@@ -55,7 +55,7 @@ export default function Home() {
       {profile && (
         <>
           {/* Profile header section */}
-          <div className="w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg text-gray-800 dark:text-white rounded-xl shadow-xl mb-6 p-6 transform transition-all duration-500 hover:shadow-2xl">
+          <div className="w-full bg-gray-200/80 dark:bg-gray-900/80 backdrop-blur-lg text-gray-800 dark:text-white rounded-xl shadow-xl mb-6 p-6 transform transition-all duration-500 hover:shadow-2xl">
             <ProfileHeader profile={profile} />
           </div>
 

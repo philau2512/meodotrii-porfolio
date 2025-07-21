@@ -2,8 +2,8 @@ import './global.css'
 import ThemeToggle from './components/ThemeToggle'
 
 export const metadata = {
-  title: 'meodotrii - Trang Cá Nhân',
-  description: '@meodotrii | meos archive 🐾',
+  title: 'meodotrii',
+  description: `@meodotrii | meo's archive 🐾`,
 }
 
 export default function RootLayout({ children }) {

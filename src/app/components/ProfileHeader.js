@@ -43,15 +43,15 @@ export default function ProfileHeader({ profile }) {
       <div className="flex justify-center gap-4 mb-4">
         <div className="flex items-center">
           <span className="text-lg font-semibold">{profile.stats.following}</span>
-          <span className="text-gray-400 text-xs ml-1">Đang theo dõi</span>
+          <span className="text-gray-400 text-xs ml-1">Followed</span>
         </div>
         <div className="flex items-center">
           <span className="text-lg font-semibold">{profile.stats.followers}</span>
-          <span className="text-gray-400 text-xs ml-1">Người theo dõi</span>
+          <span className="text-gray-400 text-xs ml-1">Followers</span>
         </div>
         <div className="flex items-center">
           <span className="text-lg font-semibold">{profile.stats.likes}</span>
-          <span className="text-gray-400 text-xs ml-1">Lượt thích</span>
+          <span className="text-gray-400 text-xs ml-1">Likes</span>
         </div>
       </div>
       
@@ -91,10 +91,10 @@ export default function ProfileHeader({ profile }) {
       
       <div className="flex justify-center gap-2 mb-2">
         <button className="px-4 py-2 rounded-full font-medium transition-all bg-white/80 text-black hover:bg-gray-200/90 hover:scale-105 hover:shadow-md w-28">
-          Theo dõi
+          Follow
         </button>
         <button className="px-4 py-2 rounded-full font-medium transition-all bg-gray-800/50 hover:bg-gray-700/80 text-white hover:scale-105 hover:shadow-md w-28">
-          Nhắn tin
+          Message
         </button>
       </div>
     </div>
