@@ -1,0 +1,74 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import ProfileHeader from './components/ProfileHeader';
+import LinkCard from './components/LinkCard';
+import Footer from './components/Footer';
+import profileData from './data.json';
+import './global.css';
+
+export default function Home() {
+  const [profile, setProfile] = useState(null);
+  const [links, setLinks] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Mô phỏng tải dữ liệu từ API hoặc file json
+    const timer = setTimeout(() => {
+      setProfile(profileData.profile);
+      
+      // Add auto-incremented id and calculated delay to each link
+      const processedLinks = profileData.links.map((link, index) => ({
+        ...link,
+        id: index + 1,
+        delay: (index + 1) * 0.1
+      }));
+      
+      setLinks(processedLinks);
+      setLoading(false);
+    }, 300);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (profile) {
+      // Set background image from profile data
+      document.body.style.backgroundImage = `url(${profile.background})`;
+    }
+    
+    return () => {
+      document.body.style.backgroundImage = '';
+    };
+  }, [profile]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-amber-500"></div>
+      </div>
+    );
+  }
+
+  return (
+    <main className="min-h-screen flex flex-col items-center max-w-md mx-auto">
+      {profile && (
+        <>
+          {/* Profile header section */}
+          <div className="w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg text-gray-800 dark:text-white rounded-xl shadow-xl mb-6 p-6 transform transition-all duration-500 hover:shadow-2xl">
+            <ProfileHeader profile={profile} />
+          </div>
+
+          {/* Links section */}
+          <div className="w-full space-y-4 mb-8">
+            {links.map((link, index) => (
+              <LinkCard key={link.id} link={link} index={index} />
+            ))}
+          </div>
+          
+          <Footer />
+        </>
+      )}
+    </main>
+  );
+} 

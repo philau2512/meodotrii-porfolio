@@ -1,0 +1,65 @@
+{
+  "profile": {
+    "username": "meodotrii",
+    "display_name": "meodotrii",
+    "email": "nhulnmm@gmail.com",
+    "bio": "💫 meo's archive 💫",
+    "tagline": "૮꒰•༝ •。꒱ა",
+    "avatar": "/assets/img/profile_meodotrii.png",
+    "background": "/assets/img/background_meodotrii.png",
+    "social": {
+      "tiktok": "https://www.tiktok.com/@meodotrii",
+      "instagram": "meodotrii"
+    },
+    "stats": {
+      "following": 18,
+      "followers": "17.1K",
+      "likes": "469K"
+    }
+  },
+  "links": [
+    {
+      "title": "UPDF",
+      "description": "Use UPDF to improve your learning efficiency",
+      "image": "/assets/img/updf.webp",
+      "url": "https://tinyurl.com/3nysuykt"
+    },
+    {
+      "title": "Bìa còng B5",
+      "description": "Bìa còng B5",
+      "image": "/assets/img/bia-cong-b5.jpg",
+      "url": "https://s.shopee.vn/50Eo6VfWbe"
+    },
+    {
+      "title": "Giấy refill",
+      "description": "Tui dùng caro 6x6 nét đứt nha",
+      "image": "/assets/img/giay-refill-so-cong.jpg",
+      "url": "https://s.shopee.vn/6fN8zp5Pzh"
+    },
+    {
+      "title": "Túi chống sốc cho ipad",
+      "image": "/assets/img/chong-soc-ipad.jpg",
+      "url": "https://s.shopee.vn/3AnGq8DdQ2"
+    },
+    {
+      "title": "Bút gel Deli",
+      "image": "/assets/img/but-gel-deli.jpg",
+      "url": "https://s.shopee.vn/5fUboRKOW7"
+    },
+    {
+      "title": "Túi đựng bút",
+      "image": "/assets/img/tui-dung-but.jpg",
+      "url": "https://s.shopee.vn/7AJPcCy2Du"
+    },
+    {
+      "title": "Tai nghe Edifier W820NB plus",
+      "image": "/assets/img/tai-nghe-edifier.jpg",
+      "url": "https://s.shopee.vn/5VBBcrfy2H"
+    },
+    {
+      "title": "Bao da ipad",
+      "image": "/assets/img/bao-da-ipad.jpg",
+      "url": "https://s.shopee.vn/VmVgaGFlZ"
+    }
+  ]
+} 
